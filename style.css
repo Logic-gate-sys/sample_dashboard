@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding:0;
+  margin:0;
+  height:100vh;
+}
+.container{
+    background-color: green;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:1fr;   
+}
+/* SIDE BAR */
+h1{
+  color:white;
+}
+#sidebar{
+    padding:15px;
+    background-color: #2196F3;
+    display:flex;
+    flex-direction: column;
+}
+.dash-main{
+  display:flex;
+  align-items:center;
+  gap:5%;
+}
+.dash-sub{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+/* anchors and svgs in the sidebar */
+.dash-main svg{
+  width:50px;
+  height: 50px;
+  fill:#f0e9e9
+}
+a{
+  color:white;
+}
+.dash-sub .dash-link svg{
+  width: 30px;
+  height:30px;
+  fill:#f0e9e9;
+}
+
+#main{
+    background-color:#e5e2e2;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 4fr;
+}
+/* HEADER */
+.header{
+    padding:12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:8px 0 0 0 rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+}
+/* top-header */
+.top-header{
+  padding:auto;
+  display:flex;
+  justify-content:center;
+}
+.top-header-search{
+  padding:15px;
+  display: flex;
+  justify-content:center;
+}
+.top-header-search input{
+  width:40vw;
+  height:30px;
+  outline:none;
+  border:none;
+  background-color: lightgray;
+  border-radius:16px;
+  
+}
+.top-header-profile{
+  padding:12px;
+  margin-left:auto;
+  display:flex;
+  align-items: center;
+  gap:12px;
+}
+/* sub-header */
+.lower-header{
+  display:flex;
+  justify-content:center;
+}
+.lower-header-profile{
+  margin-right: auto;
+  display:flex;
+  gap:12px;
+}
+.lower-header-buttons{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap:12px;
+}
+.lower-header .lower-header-buttons button{
+  width:100px;
+  height:30px;
+  outline:none;
+  border:none;
+  border-radius:10px;
+  background-color: #2196F3;
+  color:#e5e2e2;
+}
+/* INSIDE MAIN */
+.level-2{
+    background-color:#dcdcdc;
+    display:grid;
+    grid-template-columns:2.5fr 1fr;
+    grid-template-rows:1fr ;
+}
+
+.projects{
+  margin-top:24px;
+  margin-bottom: 24px;
+  padding:5px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  grid-auto-rows:1fr;
+  gap:12px;
+  overflow-y:auto;
+  }
+  /* CARD CONTENTS */
+  .cards{
+    height:60%;
+    background-color: #f8f8f8;
+    padding:12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  p{
+    text-align: start;
+    word-wrap: break-word;
+  }
+  .reactions{
+    display:flex;
+  }
+.miniside{
+    border:2px solid white;
+    padding:8px;
+}
+/* MINI SIDES */
+.miniside{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:5px;
+}
+/* Anouncements container */
+.anouncements{
+  height:70%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding:5px;
+  overflow-y:auto;
+  
+}
+.text-card{
+  display:flex;
+  flex-direction: column;
+  gap:0;
+}
+/* Trending cards container */
+.trending{
+  height:78%;
+  background-color: #f8f8f8;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y:auto;
+}
+.trend-card{
+  display:flex;
+  flex-wrap: wrap;
+  gap:12px;
+}
+.trend-textual{
+ display:flex;
+ flex-direction:column;
+ justify-content: center;
+ padding:0;
+ margin:0;
+ gap:0;
+}
+
+
+ 
+/*
+Primary Blue	#2196F3	Sidebar background
+Accent Yellow	#FBC02D	Left border of project cards (highlighted)
+Light Gray	#F1F3F4	Background of cards and page
+White	#FFFFFF	Card background, text areas, top bar
+Dark Gray	#3C4043	Project titles, heading text
+Soft Gray	#E0E0E0	Card shadows, input background
+Black	#000000	Text and icons (default)
+
+Color Usage	Approx Hex
+User profile circle	#FFD54F
+Avatar background	Custom illustrations (varies)
+Button Blue	#42A5F5
+Icon Gray	#9E9E9E
+Announcement section	#FFFFFF (with gray border)
+*/
